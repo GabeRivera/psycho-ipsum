@@ -1,0 +1,80 @@
+.page-wrapper {
+  padding-top: 58px;
+}
+.results {
+
+  width: 773px;
+  min-height: 410px;
+  margin: 27px 343.5px 27px 322px;
+  padding: 39px 35px 34px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.09), 0 15px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  font-size: 21px;
+  font-family: Open Sans, sans-serif;
+  color: #4a4a4a;
+  line-height: 36px;
+  @media only screen and (max-width: 500px) {
+    width: 320px;
+    max-width: 100%;
+    margin: 16px 0 0 0;
+  }
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    margin: 0 auto 16px;
+  }
+  button {
+    font-family: Cinzel, serif;
+    font-size: 22px;
+    background-color: #b30403;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 144px;
+    height: 56px;
+    &:disabled,
+    &[disabled] {
+      background-color: #d5d5d5;
+    }
+  }
+}
+
+h1 {
+  font-family: Cinzel, serif ;
+  font-size: 70px;
+  @media only screen and (max-width: 500px) {
+    font-size: 40px
+  }
+}
+.subtitle {  margin-top: 16px; }
+.subtitle,
+.instructions{
+  font-family: Open Sans, sans-serif;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 16px;
+  max-width: 60ch;
+}
+.emphasized {
+  color: #777777;
+  font-style: italic;
+  font-weight: 100;
+}
+
+app-socials {
+  margin-bottom: 24px;
+}
+
+.footer-text {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: 0;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  @media only screen and (max-width: 500px) {
+    font-size:10px
+  }
+}

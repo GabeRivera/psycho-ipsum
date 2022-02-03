@@ -1,3 +1,25 @@
-<p>home-page works!</p>
-<app-form></app-form>
-<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<div class="page-wrapper" fxLayout="column" fxLayoutAlign="flex-start center">
+  <h1>Psycho Ipsum</h1>
+  <p class="subtitle">
+    Copy is randomly pulled from the American Psycho screenplay (2000).
+    Written by Mary Harron and Guinevere Turner, based on
+    Bret Easton Ellis's 1991 novel American Psycho.
+  </p>
+  <p class="subtitle emphasized">(Harsher expletives excluded to avoid *missunderstandings*)</p>
+  <p class="instructions">Specify the number of paragraphs of text to generate.</p>
+  <div fxLayout="row" fxLayoutAlign="space-around center" >
+    <app-form></app-form>
+  </div>
+  <div class="results" fxLayout="column" fxLayoutAlign="flex-start center">
+    <div *ngIf="!(latestResult$ | async); else resultsWithData; " fxLayout="column" fxLayoutAlign="flex-start center"class="default">
+      <img src="/assets/img/casual-chainsaw.png" alt="casual murderer">
+      <p>Specify number of paragraphs and click generate.</p>
+    </div>
+    <ng-template #resultsWithData>
+      <div [innerHTML]="latestResult$ | async"></div>
+    </ng-template>
+    <button [disabled]="!!!(latestResult$ | async)" (click)="copyText()">Copy</button>
+  </div>
+  <div class="footer-text">©2022 Shuster Creative Collective | gregshuster.com | Loudoun Design Co.</div>
+  <app-socials></app-socials>
+</div>

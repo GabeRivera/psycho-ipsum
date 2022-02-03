@@ -1,0 +1,23 @@
+.form-wrapper {
+  height: 56px;
+}
+button {
+  font-family: Cinzel, serif;
+  font-size: 22px;
+  background-color: #b30403;
+  color: #fff;
+  border-radius: 0px 10px 10px 0px;
+  width: 214px;
+  border: none;
+}
+input {
+  border-radius: 10px 0px 0px 10px;
+  border: solid 1px #979797;
+  padding-left: 50px;
+  font-size: 22px;
+  box-sizing: border-box;
+  max-width: 107px;
+}
+input,
+button {
+}

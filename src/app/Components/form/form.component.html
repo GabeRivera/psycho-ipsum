@@ -1,1 +1,8 @@
-<p>form works!</p>
+<form
+  (ngSubmit)="onSubmit()"
+  fxLayout="column">
+  <div class="form-wrapper" fxLayout="row" fxFlexAlign="stretch">
+    <input type="number" name="paragraphs" [(ngModel)]="formModel.paragraphs">
+    <button>Generate!</button>
+  </div>
+</form>
