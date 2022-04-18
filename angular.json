@@ -128,6 +128,9 @@
               "devServerTarget": "lorem-gen:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }},
